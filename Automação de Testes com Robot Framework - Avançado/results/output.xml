@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-03T13:04:19.286711" rpa="false" schemaversion="5">
+<suite id="s1" name="Automação de Testes com Robot Framework - Avançado" source="C:\Udemy\Automação de Testes com Robot Framework - Avançado">
+<suite id="s1-s1" name="FOR" source="C:\Udemy\Automação de Testes com Robot Framework - Avançado\FOR">
+<suite id="s1-s1-s1" name="For" source="C:\Udemy\Automação de Testes com Robot Framework - Avançado\FOR\for.robot">
+<test id="s1-s1-s1-t1" name="Teste do novo formato do FOR" line="2">
+<kw name="Novo formato do FOR de listas">
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.309625" level="INFO">O animal desse laço é: gato!</msg>
+<arg>O animal desse laço é: ${animal}!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.309363" elapsed="0.000474"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.310592" level="INFO">Vamos para o próximo animal da lista...</msg>
+<arg>Vamos para o próximo animal da lista...</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.310020" elapsed="0.001022"/>
+</kw>
+<var name="${animal}">gato</var>
+<status status="PASS" start="2024-12-03T13:04:19.309080" elapsed="0.002103"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.311720" level="INFO">O animal desse laço é: cachorro!</msg>
+<arg>O animal desse laço é: ${animal}!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.311512" elapsed="0.000459"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.312239" level="INFO">Vamos para o próximo animal da lista...</msg>
+<arg>Vamos para o próximo animal da lista...</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.312075" elapsed="0.000284"/>
+</kw>
+<var name="${animal}">cachorro</var>
+<status status="PASS" start="2024-12-03T13:04:19.311315" elapsed="0.001096"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.312751" level="INFO">O animal desse laço é: cavalo!</msg>
+<arg>O animal desse laço é: ${animal}!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.312602" elapsed="0.000252"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.313050" level="INFO">Vamos para o próximo animal da lista...</msg>
+<arg>Vamos para o próximo animal da lista...</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.312931" elapsed="0.000207"/>
+</kw>
+<var name="${animal}">cavalo</var>
+<status status="PASS" start="2024-12-03T13:04:19.312493" elapsed="0.000691"/>
+</iter>
+<var>${animal}</var>
+<value>gato</value>
+<value>cachorro</value>
+<value>cavalo</value>
+<status status="PASS" start="2024-12-03T13:04:19.308902" elapsed="0.004316"/>
+</for>
+<status status="PASS" start="2024-12-03T13:04:19.308531" elapsed="0.004756"/>
+</kw>
+<status status="PASS" start="2024-12-03T13:04:19.307428" elapsed="0.006286"/>
+</test>
+<test id="s1-s1-s1-t2" name="Teste de FOR aninhado" line="5">
+<kw name="Cria cadastro de produtos (FOR aninhado)">
+<for flavor="IN">
+<iter>
+<kw name="Imprime tamanhos para o produto">
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.317498" level="INFO">Produto: baby look - Tam: P</msg>
+<arg>Produto: ${produto} - Tam: ${tamanho}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.317330" elapsed="0.000348"/>
+</kw>
+<var name="${tamanho}">P</var>
+<status status="PASS" start="2024-12-03T13:04:19.317219" elapsed="0.000540"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.318478" level="INFO">Produto: baby look - Tam: M</msg>
+<arg>Produto: ${produto} - Tam: ${tamanho}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.318155" elapsed="0.000470"/>
+</kw>
+<var name="${tamanho}">M</var>
+<status status="PASS" start="2024-12-03T13:04:19.317833" elapsed="0.000856"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.319224" level="INFO">Produto: baby look - Tam: G</msg>
+<arg>Produto: ${produto} - Tam: ${tamanho}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.318928" elapsed="0.000563"/>
+</kw>
+<var name="${tamanho}">G</var>
+<status status="PASS" start="2024-12-03T13:04:19.318780" elapsed="0.000784"/>
+</iter>
+<var>${tamanho}</var>
+<value>P</value>
+<value>M</value>
+<value>G</value>
+<status status="PASS" start="2024-12-03T13:04:19.317106" elapsed="0.002528"/>
+</for>
+<arg>${produto}</arg>
+<status status="PASS" start="2024-12-03T13:04:19.316902" elapsed="0.002816"/>
+</kw>
+<var name="${produto}">baby look</var>
+<status status="PASS" start="2024-12-03T13:04:19.316753" elapsed="0.003073"/>
+</iter>
+<iter>
+<kw name="Imprime tamanhos para o produto">
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.320916" level="INFO">Produto: camiseta - Tam: P</msg>
+<arg>Produto: ${produto} - Tam: ${tamanho}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.320748" elapsed="0.000334"/>
+</kw>
+<var name="${tamanho}">P</var>
+<status status="PASS" start="2024-12-03T13:04:19.320634" elapsed="0.000510"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.321785" level="INFO">Produto: camiseta - Tam: M</msg>
+<arg>Produto: ${produto} - Tam: ${tamanho}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.321488" elapsed="0.000548"/>
+</kw>
+<var name="${tamanho}">M</var>
+<status status="PASS" start="2024-12-03T13:04:19.321214" elapsed="0.000909"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.322705" level="INFO">Produto: camiseta - Tam: G</msg>
+<arg>Produto: ${produto} - Tam: ${tamanho}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.322452" elapsed="0.000393"/>
+</kw>
+<var name="${tamanho}">G</var>
+<status status="PASS" start="2024-12-03T13:04:19.322207" elapsed="0.000700"/>
+</iter>
+<var>${tamanho}</var>
+<value>P</value>
+<value>M</value>
+<value>G</value>
+<status status="PASS" start="2024-12-03T13:04:19.320506" elapsed="0.002440"/>
+</for>
+<arg>${produto}</arg>
+<status status="PASS" start="2024-12-03T13:04:19.320217" elapsed="0.002794"/>
+</kw>
+<var name="${produto}">camiseta</var>
+<status status="PASS" start="2024-12-03T13:04:19.319921" elapsed="0.003129"/>
+</iter>
+<iter>
+<kw name="Imprime tamanhos para o produto">
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.324371" level="INFO">Produto: blusa - Tam: P</msg>
+<arg>Produto: ${produto} - Tam: ${tamanho}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.323887" elapsed="0.000892"/>
+</kw>
+<var name="${tamanho}">P</var>
+<status status="PASS" start="2024-12-03T13:04:19.323778" elapsed="0.001076"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.325319" level="INFO">Produto: blusa - Tam: M</msg>
+<arg>Produto: ${produto} - Tam: ${tamanho}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.325107" elapsed="0.000447"/>
+</kw>
+<var name="${tamanho}">M</var>
+<status status="PASS" start="2024-12-03T13:04:19.324947" elapsed="0.000705"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.326739" level="INFO">Produto: blusa - Tam: G</msg>
+<arg>Produto: ${produto} - Tam: ${tamanho}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.326327" elapsed="0.000583"/>
+</kw>
+<var name="${tamanho}">G</var>
+<status status="PASS" start="2024-12-03T13:04:19.325833" elapsed="0.001489"/>
+</iter>
+<var>${tamanho}</var>
+<value>P</value>
+<value>M</value>
+<value>G</value>
+<status status="PASS" start="2024-12-03T13:04:19.323607" elapsed="0.003768"/>
+</for>
+<arg>${produto}</arg>
+<status status="PASS" start="2024-12-03T13:04:19.323279" elapsed="0.004171"/>
+</kw>
+<var name="${produto}">blusa</var>
+<status status="PASS" start="2024-12-03T13:04:19.323121" elapsed="0.004374"/>
+</iter>
+<var>${produto}</var>
+<value>baby look</value>
+<value>camiseta</value>
+<value>blusa</value>
+<status status="PASS" start="2024-12-03T13:04:19.316553" elapsed="0.010971"/>
+</for>
+<status status="PASS" start="2024-12-03T13:04:19.316124" elapsed="0.011448"/>
+</kw>
+<status status="PASS" start="2024-12-03T13:04:19.315014" elapsed="0.012789"/>
+</test>
+<test id="s1-s1-s1-t3" name="Teste FOR usando várias váriaveis" line="8">
+<kw name="Cria dicionário de traduções">
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.333271" level="INFO">Animal 1:
+Em inglês: cat
+Em finlandês: kissa
+Em português: gato</msg>
+<arg>Animal ${index}:\nEm inglês: ${english}\nEm finlandês: ${finnish}\nEm português: ${portugues}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.333045" elapsed="0.000755"/>
+</kw>
+<var name="${index}">1</var>
+<var name="${english}">cat</var>
+<var name="${finnish}">kissa</var>
+<var name="${portugues}">gato</var>
+<status status="PASS" start="2024-12-03T13:04:19.332919" elapsed="0.000994"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.334533" level="INFO">Animal 2:
+Em inglês: dog
+Em finlandês: koira
+Em português: cachorro</msg>
+<arg>Animal ${index}:\nEm inglês: ${english}\nEm finlandês: ${finnish}\nEm português: ${portugues}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.334305" elapsed="0.000377"/>
+</kw>
+<var name="${index}">2</var>
+<var name="${english}">dog</var>
+<var name="${finnish}">koira</var>
+<var name="${portugues}">cachorro</var>
+<status status="PASS" start="2024-12-03T13:04:19.334135" elapsed="0.000615"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.335707" level="INFO">Animal 3:
+Em inglês: horse
+Em finlandês: hevonen
+Em português: cavalo</msg>
+<arg>Animal ${index}:\nEm inglês: ${english}\nEm finlandês: ${finnish}\nEm português: ${portugues}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.335211" elapsed="0.000972"/>
+</kw>
+<var name="${index}">3</var>
+<var name="${english}">horse</var>
+<var name="${finnish}">hevonen</var>
+<var name="${portugues}">cavalo</var>
+<status status="PASS" start="2024-12-03T13:04:19.334864" elapsed="0.001630"/>
+</iter>
+<var>${index}</var>
+<var>${english}</var>
+<var>${finnish}</var>
+<var>${portugues}</var>
+<value>1</value>
+<value>cat</value>
+<value>kissa</value>
+<value>gato</value>
+<value>2</value>
+<value>dog</value>
+<value>koira</value>
+<value>cachorro</value>
+<value>3</value>
+<value>horse</value>
+<value>hevonen</value>
+<value>cavalo</value>
+<status status="PASS" start="2024-12-03T13:04:19.332710" elapsed="0.003887"/>
+</for>
+<status status="PASS" start="2024-12-03T13:04:19.331603" elapsed="0.005154"/>
+</kw>
+<status status="PASS" start="2024-12-03T13:04:19.328989" elapsed="0.008574"/>
+</test>
+<test id="s1-s1-s1-t4" name="Teste FOR com numeração da lista" line="11">
+<kw name="For com numeração">
+<for flavor="IN ENUMERATE">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.341617" level="INFO">Item da lista: P - Posição do item na lista: 0</msg>
+<arg>Item da lista: ${item} - Posição do item na lista: ${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.340854" elapsed="0.002041"/>
+</kw>
+<var name="${index}">0</var>
+<var name="${item}">P</var>
+<status status="PASS" start="2024-12-03T13:04:19.340572" elapsed="0.002470"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.344054" level="INFO">Item da lista: M - Posição do item na lista: 1</msg>
+<arg>Item da lista: ${item} - Posição do item na lista: ${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.343706" elapsed="0.000699"/>
+</kw>
+<var name="${index}">1</var>
+<var name="${item}">M</var>
+<status status="PASS" start="2024-12-03T13:04:19.343315" elapsed="0.001235"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.345191" level="INFO">Item da lista: G - Posição do item na lista: 2</msg>
+<arg>Item da lista: ${item} - Posição do item na lista: ${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.344964" elapsed="0.000368"/>
+</kw>
+<var name="${index}">2</var>
+<var name="${item}">G</var>
+<status status="PASS" start="2024-12-03T13:04:19.344666" elapsed="0.000725"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.346272" level="INFO">Item da lista: GG - Posição do item na lista: 3</msg>
+<arg>Item da lista: ${item} - Posição do item na lista: ${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.346019" elapsed="0.000422"/>
+</kw>
+<var name="${index}">3</var>
+<var name="${item}">GG</var>
+<status status="PASS" start="2024-12-03T13:04:19.345482" elapsed="0.001022"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.347060" level="INFO">Item da lista: XG - Posição do item na lista: 4</msg>
+<arg>Item da lista: ${item} - Posição do item na lista: ${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.346756" elapsed="0.000442"/>
+</kw>
+<var name="${index}">4</var>
+<var name="${item}">XG</var>
+<status status="PASS" start="2024-12-03T13:04:19.346594" elapsed="0.000662"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.347627" level="INFO">Item da lista: XXG - Posição do item na lista: 5</msg>
+<arg>Item da lista: ${item} - Posição do item na lista: ${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.347460" elapsed="0.000410"/>
+</kw>
+<var name="${index}">5</var>
+<var name="${item}">XXG</var>
+<status status="PASS" start="2024-12-03T13:04:19.347338" elapsed="0.000600"/>
+</iter>
+<var>${index}</var>
+<var>${item}</var>
+<value>P</value>
+<value>M</value>
+<value>G</value>
+<value>GG</value>
+<value>XG</value>
+<value>XXG</value>
+<status status="PASS" start="2024-12-03T13:04:19.340256" elapsed="0.007722"/>
+</for>
+<status status="PASS" start="2024-12-03T13:04:19.339772" elapsed="0.008277"/>
+</kw>
+<status status="PASS" start="2024-12-03T13:04:19.339026" elapsed="0.009402"/>
+</test>
+<test id="s1-s1-s1-t5" name="Teste mais opções IN RANGE" line="14">
+<kw name="Tradicional">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.352765" level="INFO">1</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.352544" elapsed="0.000755"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-12-03T13:04:19.352351" elapsed="0.001023"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.353741" level="INFO">2</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.353580" elapsed="0.000285"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-12-03T13:04:19.353448" elapsed="0.000468"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.354537" level="INFO">3</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.354381" elapsed="0.000470"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2024-12-03T13:04:19.354245" elapsed="0.000671"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.355570" level="INFO">4</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.355268" elapsed="0.000449"/>
+</kw>
+<var name="${index}">4</var>
+<status status="PASS" start="2024-12-03T13:04:19.354992" elapsed="0.000790"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.356203" level="INFO">5</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.356048" elapsed="0.000264"/>
+</kw>
+<var name="${index}">5</var>
+<status status="PASS" start="2024-12-03T13:04:19.355862" elapsed="0.000500"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.356651" level="INFO">6</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.356521" elapsed="0.000294"/>
+</kw>
+<var name="${index}">6</var>
+<status status="PASS" start="2024-12-03T13:04:19.356422" elapsed="0.000441"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.357222" level="INFO">7</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.357036" elapsed="0.000463"/>
+</kw>
+<var name="${index}">7</var>
+<status status="PASS" start="2024-12-03T13:04:19.356926" elapsed="0.000708"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.359087" level="INFO">8</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.358439" elapsed="0.001030"/>
+</kw>
+<var name="${index}">8</var>
+<status status="PASS" start="2024-12-03T13:04:19.357922" elapsed="0.001704"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.360508" level="INFO">9</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.360209" elapsed="0.000546"/>
+</kw>
+<var name="${index}">9</var>
+<status status="PASS" start="2024-12-03T13:04:19.359825" elapsed="0.001026"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.361757" level="INFO">10</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.361366" elapsed="0.000571"/>
+</kw>
+<var name="${index}">10</var>
+<status status="PASS" start="2024-12-03T13:04:19.360965" elapsed="0.001039"/>
+</iter>
+<var>${index}</var>
+<value>1</value>
+<value>11</value>
+<status status="PASS" start="2024-12-03T13:04:19.351952" elapsed="0.010089"/>
+</for>
+<doc>Percorre de 1 até 10</doc>
+<status status="PASS" start="2024-12-03T13:04:19.351261" elapsed="0.010843"/>
+</kw>
+<kw name="Apenas quantidade de laços informada (limite superior)">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.363225" level="INFO">0</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.363060" elapsed="0.000334"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2024-12-03T13:04:19.362934" elapsed="0.000526"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.363817" level="INFO">1</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.363654" elapsed="0.000732"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-12-03T13:04:19.363536" elapsed="0.001035"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.366827" level="INFO">2</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.365403" elapsed="0.002742"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-12-03T13:04:19.364779" elapsed="0.003614"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.370158" level="INFO">3</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.369485" elapsed="0.001114"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2024-12-03T13:04:19.368724" elapsed="0.002031"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.371692" level="INFO">4</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.371224" elapsed="0.000862"/>
+</kw>
+<var name="${index}">4</var>
+<status status="PASS" start="2024-12-03T13:04:19.370902" elapsed="0.001340"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.373734" level="INFO">5</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.373230" elapsed="0.001834"/>
+</kw>
+<var name="${index}">5</var>
+<status status="PASS" start="2024-12-03T13:04:19.372457" elapsed="0.002798"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.376398" level="INFO">6</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.375973" elapsed="0.000761"/>
+</kw>
+<var name="${index}">6</var>
+<status status="PASS" start="2024-12-03T13:04:19.375498" elapsed="0.001361"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.378632" level="INFO">7</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.377474" elapsed="0.001913"/>
+</kw>
+<var name="${index}">7</var>
+<status status="PASS" start="2024-12-03T13:04:19.377027" elapsed="0.002565"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.385073" level="INFO">8</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.383258" elapsed="0.002436"/>
+</kw>
+<var name="${index}">8</var>
+<status status="PASS" start="2024-12-03T13:04:19.379823" elapsed="0.006160"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.387493" level="INFO">9</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.386862" elapsed="0.001034"/>
+</kw>
+<var name="${index}">9</var>
+<status status="PASS" start="2024-12-03T13:04:19.386254" elapsed="0.001803"/>
+</iter>
+<var>${index}</var>
+<value>10</value>
+<status status="PASS" start="2024-12-03T13:04:19.362739" elapsed="0.025391"/>
+</for>
+<doc>Percorre de 0 até 9</doc>
+<status status="PASS" start="2024-12-03T13:04:19.362481" elapsed="0.025767"/>
+</kw>
+<kw name="Aritmético">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.390559" level="INFO">${var} = 5</msg>
+<var>${var}</var>
+<arg>${5}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.389783" elapsed="0.002100"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.393734" level="INFO">0</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.393326" elapsed="0.000799"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2024-12-03T13:04:19.392996" elapsed="0.001276"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.395616" level="INFO">1</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.395119" elapsed="0.000839"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-12-03T13:04:19.394648" elapsed="0.001477"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.397079" level="INFO">2</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.396589" elapsed="0.000959"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-12-03T13:04:19.396306" elapsed="0.001378"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.399028" level="INFO">3</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.398414" elapsed="0.001287"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2024-12-03T13:04:19.397920" elapsed="0.001962"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.401263" level="INFO">4</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.400647" elapsed="0.001220"/>
+</kw>
+<var name="${index}">4</var>
+<status status="PASS" start="2024-12-03T13:04:19.400059" elapsed="0.001950"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.402962" level="INFO">5</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.402540" elapsed="0.000741"/>
+</kw>
+<var name="${index}">5</var>
+<status status="PASS" start="2024-12-03T13:04:19.402197" elapsed="0.001165"/>
+</iter>
+<var>${index}</var>
+<value>${var} + 1</value>
+<status status="PASS" start="2024-12-03T13:04:19.392406" elapsed="0.010994"/>
+</for>
+<doc>Percorre de 0 até 5</doc>
+<status status="PASS" start="2024-12-03T13:04:19.389137" elapsed="0.014340"/>
+</kw>
+<kw name="Intervalos específicos">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.404815" level="INFO">0</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.404598" elapsed="0.000444"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2024-12-03T13:04:19.404427" elapsed="0.000777"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.406028" level="INFO">5</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.405671" elapsed="0.000580"/>
+</kw>
+<var name="${index}">5</var>
+<status status="PASS" start="2024-12-03T13:04:19.405339" elapsed="0.001003"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.407226" level="INFO">10</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.406798" elapsed="0.000684"/>
+</kw>
+<var name="${index}">10</var>
+<status status="PASS" start="2024-12-03T13:04:19.406442" elapsed="0.001136"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.408801" level="INFO">15</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.408240" elapsed="0.000919"/>
+</kw>
+<var name="${index}">15</var>
+<status status="PASS" start="2024-12-03T13:04:19.407817" elapsed="0.001509"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.410955" level="INFO">20</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.410208" elapsed="0.001701"/>
+</kw>
+<var name="${index}">20</var>
+<status status="PASS" start="2024-12-03T13:04:19.409561" elapsed="0.002566"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.413563" level="INFO">25</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.412949" elapsed="0.001090"/>
+</kw>
+<var name="${index}">25</var>
+<status status="PASS" start="2024-12-03T13:04:19.412373" elapsed="0.001828"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-03T13:04:19.415835" level="INFO">30</msg>
+<arg>${index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-03T13:04:19.415151" elapsed="0.001516"/>
+</kw>
+<var name="${index}">30</var>
+<status status="PASS" start="2024-12-03T13:04:19.414412" elapsed="0.002479"/>
+</iter>
+<var>${index}</var>
+<value>0</value>
+<value>31</value>
+<value>5</value>
+<status status="PASS" start="2024-12-03T13:04:19.404155" elapsed="0.012831"/>
+</for>
+<doc>Percorre de 0 até 30, pulando de 5 em 5</doc>
+<status status="PASS" start="2024-12-03T13:04:19.403822" elapsed="0.013323"/>
+</kw>
+<status status="PASS" start="2024-12-03T13:04:19.349824" elapsed="0.067858"/>
+</test>
+<status status="PASS" start="2024-12-03T13:04:19.304935" elapsed="0.114627"/>
+</suite>
+<status status="PASS" start="2024-12-03T13:04:19.302466" elapsed="0.119040"/>
+</suite>
+<status status="PASS" start="2024-12-03T13:04:19.289974" elapsed="0.133223"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Automação de Testes com Robot Framework - Avançado">Automação de Testes com Robot Framework - Avançado</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1" name="FOR">Automação de Testes com Robot Framework - Avançado.FOR</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1-s1" name="For">Automação de Testes com Robot Framework - Avançado.FOR.For</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
