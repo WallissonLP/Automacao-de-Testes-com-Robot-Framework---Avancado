@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-09T15:52:09.440914" rpa="false" schemaversion="5">
+<suite id="s1" name="myLibrary" source="C:\Udemy\Automação de Testes com Robot Framework - Avançado\MyCustomLibraries\myLibrary.robot">
+<test id="s1-t1" name="Teste de conversão de string para HASH sha256" line="5">
+<kw name="Converter &quot;Estou ficando ninja em Robot Framework!!&quot; para sha256" source_name="Converter &quot;${CONTEUDO}&quot; para sha256">
+<kw name="Gerar Hash" owner="geradorHash">
+<msg time="2024-12-09T15:52:09.461199" level="INFO">Conteúdo: Estou ficando ninja em Robot Framework!!
+Hash gerado: 6526496e1589bb11988c5fd1051d8927a1160b1c3da51ca93ff6e2eab6ecfa38</msg>
+<msg time="2024-12-09T15:52:09.461258" level="INFO">${CONTEUDO_HASH} = 6526496e1589bb11988c5fd1051d8927a1160b1c3da51ca93ff6e2eab6ecfa38</msg>
+<var>${CONTEUDO_HASH}</var>
+<arg>${CONTEUDO}</arg>
+<status status="PASS" start="2024-12-09T15:52:09.461061" elapsed="0.000213"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-09T15:52:09.461458" level="INFO">6526496e1589bb11988c5fd1051d8927a1160b1c3da51ca93ff6e2eab6ecfa38</msg>
+<arg>${CONTEUDO_HASH}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-09T15:52:09.461360" elapsed="0.000125"/>
+</kw>
+<status status="PASS" start="2024-12-09T15:52:09.460736" elapsed="0.000795"/>
+</kw>
+<status status="PASS" start="2024-12-09T15:52:09.460116" elapsed="0.001646"/>
+</test>
+<test id="s1-t2" name="Teste de conversão de arquivo para HASH sha256" line="8">
+<kw name="Converter o arquivo &quot;arquivo_PDF.pdf&quot; para sha256" source_name="Converter o arquivo &quot;${FILE}&quot; para sha256">
+<kw name="Gerar Hash Arquivo" owner="geradorHash">
+<msg time="2024-12-09T15:52:09.462957" level="INFO">Arquivo: ./arquivo_PDF.pdf
+Hash gerado: d9021489da6cd18be2f0954475524f1c2d37628e127a1e23ee9941e133dcbc7f</msg>
+<msg time="2024-12-09T15:52:09.463008" level="INFO">${CONTEUDO_HASH} = d9021489da6cd18be2f0954475524f1c2d37628e127a1e23ee9941e133dcbc7f</msg>
+<var>${CONTEUDO_HASH}</var>
+<arg>./${FILE}</arg>
+<status status="PASS" start="2024-12-09T15:52:09.462739" elapsed="0.000281"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-09T15:52:09.463157" level="INFO">d9021489da6cd18be2f0954475524f1c2d37628e127a1e23ee9941e133dcbc7f</msg>
+<arg>${CONTEUDO_HASH}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-09T15:52:09.463083" elapsed="0.000097"/>
+</kw>
+<status status="PASS" start="2024-12-09T15:52:09.462556" elapsed="0.000659"/>
+</kw>
+<status status="PASS" start="2024-12-09T15:52:09.462313" elapsed="0.001102"/>
+</test>
+<status status="PASS" start="2024-12-09T15:52:09.442564" elapsed="0.021452"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="myLibrary">myLibrary</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

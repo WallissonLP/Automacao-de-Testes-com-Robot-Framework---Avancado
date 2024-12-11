@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-09T16:19:57.699030" rpa="false" schemaversion="5">
+<suite id="s1" name="myLibrary" source="C:\Udemy\Automação de Testes com Robot Framework - Avançado\MyCustomLibraries_ComSelenium\myLibrary.robot">
+<test id="s1-t1" name="Teste de conversão de string para HASH sha256" line="7">
+<kw name="Converter &quot;Estou ficando ninja em Robot Framework!!&quot; para sha256" source_name="Converter &quot;${CONTEUDO}&quot; para sha256">
+<kw name="Gerar Hash" owner="geradorHash">
+<msg time="2024-12-09T16:19:57.720079" level="INFO">Conteúdo: Estou ficando ninja em Robot Framework!!
+Hash gerado: 6526496e1589bb11988c5fd1051d8927a1160b1c3da51ca93ff6e2eab6ecfa38</msg>
+<msg time="2024-12-09T16:19:57.720132" level="INFO">${CONTEUDO_HASH} = 6526496e1589bb11988c5fd1051d8927a1160b1c3da51ca93ff6e2eab6ecfa38</msg>
+<var>${CONTEUDO_HASH}</var>
+<arg>${CONTEUDO}</arg>
+<status status="PASS" start="2024-12-09T16:19:57.719948" elapsed="0.000198"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-09T16:19:57.720315" level="INFO">6526496e1589bb11988c5fd1051d8927a1160b1c3da51ca93ff6e2eab6ecfa38</msg>
+<arg>${CONTEUDO_HASH}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-09T16:19:57.720228" elapsed="0.000110"/>
+</kw>
+<status status="PASS" start="2024-12-09T16:19:57.719642" elapsed="0.000735"/>
+</kw>
+<status status="PASS" start="2024-12-09T16:19:57.718950" elapsed="0.001637"/>
+</test>
+<test id="s1-t2" name="Teste de conversão de arquivo para HASH sha256" line="10">
+<kw name="Converter o arquivo &quot;arquivo_PDF.pdf&quot; para sha256" source_name="Converter o arquivo &quot;${FILE}&quot; para sha256">
+<kw name="Gerar Hash Arquivo" owner="geradorHash">
+<msg time="2024-12-09T16:19:57.721845" level="INFO">Arquivo: ./arquivo_PDF.pdf
+Hash gerado: d9021489da6cd18be2f0954475524f1c2d37628e127a1e23ee9941e133dcbc7f</msg>
+<msg time="2024-12-09T16:19:57.721892" level="INFO">${CONTEUDO_HASH} = d9021489da6cd18be2f0954475524f1c2d37628e127a1e23ee9941e133dcbc7f</msg>
+<var>${CONTEUDO_HASH}</var>
+<arg>./${FILE}</arg>
+<status status="PASS" start="2024-12-09T16:19:57.721652" elapsed="0.000250"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-09T16:19:57.722035" level="INFO">d9021489da6cd18be2f0954475524f1c2d37628e127a1e23ee9941e133dcbc7f</msg>
+<arg>${CONTEUDO_HASH}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-09T16:19:57.721966" elapsed="0.000091"/>
+</kw>
+<status status="PASS" start="2024-12-09T16:19:57.721519" elapsed="0.000569"/>
+</kw>
+<status status="PASS" start="2024-12-09T16:19:57.721255" elapsed="0.001027"/>
+</test>
+<test id="s1-t3" name="Teste minha SeleniumLibrary" line="13">
+<kw name="Abrir meu browser">
+<kw name="My Open Browser">
+<msg time="2024-12-09T16:19:57.723701" level="FAIL">No keyword with name 'My Open Browser' found.</msg>
+<arg>http://www.robotframework.org</arg>
+<arg>chrome</arg>
+<status status="FAIL" start="2024-12-09T16:19:57.723683" elapsed="0.000045">No keyword with name 'My Open Browser' found.</status>
+</kw>
+<status status="FAIL" start="2024-12-09T16:19:57.723197" elapsed="0.000608">No keyword with name 'My Open Browser' found.</status>
+</kw>
+<status status="FAIL" start="2024-12-09T16:19:57.722979" elapsed="0.001052">No keyword with name 'My Open Browser' found.</status>
+</test>
+<status status="FAIL" start="2024-12-09T16:19:57.700779" elapsed="0.024224"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="1" skip="0" id="s1" name="myLibrary">myLibrary</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-12-09T16:19:57.717921" level="ERROR">Error in file 'C:\Udemy\Automação de Testes com Robot Framework - Avançado\MyCustomLibraries_ComSelenium\myLibrary.robot' on line 3: Importing library './Libraries/SeleniumLibrary' failed: ValueError: Empty module name
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Udemy\Automação de Testes com Robot Framework - Avançado\MyCustomLibraries_ComSelenium
+  C:\Users\wallisson.parreira_s\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\wallisson.parreira_s\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\wallisson.parreira_s\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\wallisson.parreira_s\AppData\Local\Programs\Python\Python313
+  C:\Users\wallisson.parreira_s\AppData\Local\Programs\Python\Python313\Lib\site-packages</msg>
+</errors>
+</robot>

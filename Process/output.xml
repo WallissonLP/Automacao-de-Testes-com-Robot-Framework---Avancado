@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-03T16:57:36.501392" rpa="false" schemaversion="5">
+<suite id="s1" name="Process" source="C:\Udemy\Automação de Testes com Robot Framework - Avançado\Process\process.robot">
+<test id="s1-t1" name="Exemplo 03: Execute comandos de prompt" line="13">
+<kw name="Executando comandos diversos de prompt">
+<kw name="Run Process" owner="Process">
+<msg time="2024-12-03T16:57:36.531545" level="INFO">Starting process:
+mkdir robot_teste</msg>
+<msg time="2024-12-03T16:57:36.585528" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-12-03T16:57:36.863087" level="INFO">Process completed.</msg>
+<arg>mkdir robot_teste</arg>
+<arg>cwd=C:\\Udemy\\Automação de Testes com Robot Framework - Avançado\\Process</arg>
+<arg>shell=True</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-12-03T16:57:36.531375" elapsed="0.331829"/>
+</kw>
+<status status="PASS" start="2024-12-03T16:57:36.530947" elapsed="0.332377"/>
+</kw>
+<status status="PASS" start="2024-12-03T16:57:36.529889" elapsed="0.333959"/>
+</test>
+<doc>http://robotframework.org/robotframework/latest/libraries/Process.html</doc>
+<status status="PASS" start="2024-12-03T16:57:36.504077" elapsed="0.360972"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Process">Process</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

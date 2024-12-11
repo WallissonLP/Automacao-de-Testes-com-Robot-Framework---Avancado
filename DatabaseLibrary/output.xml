@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-09T15:20:12.621408" rpa="false" schemaversion="5">
+<suite id="s1" name="Database" source="C:\Udemy\Automação de Testes com Robot Framework - Avançado\DatabaseLibrary\database.robot">
+<test id="s1-t1" name="Exemplo 05: Fazer um select simples" line="37">
+<kw name="Conectar no Banco de Dados" type="SETUP">
+<kw name="Connect To Database" owner="DatabaseLibrary">
+<msg time="2024-12-09T15:20:12.657742" level="INFO">Looking for configuration file: 'resources\db.cfg'</msg>
+<msg time="2024-12-09T15:20:12.657843" level="INFO">Configuration file doesn't exist</msg>
+<msg time="2024-12-09T15:20:12.782645" level="INFO">Connect to DB using : psycopg.connect(dbname='robot', user='postgres', password=***, host='localhost', port='5432')</msg>
+<arg>psycopg</arg>
+<arg>dbname=robot</arg>
+<arg>user=postgres</arg>
+<arg>password=postgres</arg>
+<arg>host=localhost</arg>
+<arg>port=5432</arg>
+<doc>Creates a database connection using the DB API 2.0 ``db_module`` and the parameters provided.
+Along with listed commonly used arguments (`db_name`, `db_host` etc.)
+you can set any other DB module specific parameters as key/value pairs.</doc>
+<status status="PASS" start="2024-12-09T15:20:12.657562" elapsed="0.221619"/>
+</kw>
+<status status="PASS" start="2024-12-09T15:20:12.657198" elapsed="0.222095"/>
+</kw>
+<kw name="Table Must Exist" owner="DatabaseLibrary">
+<msg time="2024-12-09T15:20:12.879943" level="INFO" html="true">Executing sql:&lt;br&gt;&lt;code style="font-weight: bold;"&gt;SELECT * FROM information_schema.tables WHERE table_name='account'&lt;/code&gt;</msg>
+<msg time="2024-12-09T15:20:12.884374" level="INFO">Retrieved 1 rows</msg>
+<msg time="2024-12-09T15:20:12.884434" level="INFO" html="true">&lt;div style="max-width: 100%; overflow-x: auto;"&gt;&lt;table style="width: auto; border-collapse: collapse; border: 2px solid rgb(140 140 140)"&gt;&lt;caption style="text-align: left; font-weight: bold; padding: 5px;"&gt;Query returned 1 rows&lt;/caption&gt;&lt;tr&gt;&lt;th scope="col" style="background-color: #d6ecd4; border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;Row&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;table_catalog&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;table_schema&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;table_name&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;table_type&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;self_referencing_column_name&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;reference_generation&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;user_defined_type_catalog&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;user_defined_type_schema&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;user_defined_type_name&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;is_insertable_into&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;is_typed&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;commit_action&lt;/th&gt;&lt;/tr&gt;&lt;tr style="background-color: #eee;"&gt;&lt;th scope="row" style="background-color: #d6ecd4;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;0&lt;/th&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;robot&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;public&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;account&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;BASE TABLE&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;None&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;None&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;None&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;None&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;None&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;YES&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;NO&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;None&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<arg>account</arg>
+<doc>Check if the table with `table_name` exists in the database.</doc>
+<status status="PASS" start="2024-12-09T15:20:12.879787" elapsed="0.004932"/>
+</kw>
+<kw name="Desconectar do Banco de Dados" type="TEARDOWN">
+<kw name="Disconnect From Database" owner="DatabaseLibrary">
+<doc>Disconnects from the database.</doc>
+<status status="PASS" start="2024-12-09T15:20:12.885204" elapsed="0.000146"/>
+</kw>
+<status status="PASS" start="2024-12-09T15:20:12.885033" elapsed="0.000375"/>
+</kw>
+<status status="PASS" start="2024-12-09T15:20:12.656617" elapsed="0.229089"/>
+</test>
+<doc>[14/10/2019] https://franz-see.github.io/Robotframework-Database-Library/api/1.2.2/DatabaseLibrary.html
+Instale: "pip install -U robotframework-databaselibrary"
+Para acessar o BD o Robot precisa conhecer o DRIVER de cada banco, então precisamos instalar esse DRIVER também (instale apenas para o BD que você utiliza!) ...
+Para PostgreSQL: "pip install psycopg2"
+Para SQLite 3: não precisa instalar nada!
+Para MySQL: "pip install pymysql"
+Para SQL Server: "pip install pymssql"
+Para Oracle: "pip install cx-Oracle"</doc>
+<status status="PASS" start="2024-12-09T15:20:12.623187" elapsed="0.263961"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Database">Database</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-12-09T15:20:12.618491" level="WARN">Error in file 'C:\Udemy\Automação de Testes com Robot Framework - Avançado\DatabaseLibrary\database.robot' on line 67: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
